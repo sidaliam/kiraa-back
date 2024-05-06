@@ -5,7 +5,7 @@ const router =express.Router();
 
 
 //post
-router.post("/:hotelid",  verifyadmin,createroom)
+router.post("/:hotelid",createroom)
   
 //update
 router.put("/:id",verifyadmin, updateroom);
