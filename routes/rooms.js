@@ -8,9 +8,9 @@ const router =express.Router();
 router.post("/:hotelid",createroom)
   
 //update
-router.put("/:id",verifyadmin, updateroom);
+router.put("/:id",updateroom);
 //delete
-router.delete("/:roomid/:hotelid",verifyadmin,deleteroom);
+router.delete("/:roomid/:hotelid",deleteroom);
 //
 router.put("/availabality/:id", availableroom)
 router.put("/toggleAvailability/:roomId",changedispo)
