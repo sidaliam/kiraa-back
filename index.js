@@ -21,7 +21,7 @@ const connect = async () => {
 };
 // Configuration CORS pour autoriser uniquement une origine spécifique
 const corsOptions = {
-  origin: ["http://localhost:3000","https://kiraaserv.onrender.com","https://kiraserv.onrender.com","https://localhost","https://kiraaadmin.onrender.com","192.168.100.5:3000","https://kiraadz.com","http://kiraadz.com","kiraadz.com"], // Remplacez par le domaine de votre frontend déployé
+  origin: ["http://localhost:3000","http://localhost:3001","https://kiraaserv.onrender.com","https://kiraserv.onrender.com","https://localhost","https://kiraaadmin.onrender.com","192.168.100.5:3000","https://kiraadz.com","http://kiraadz.com","kiraadz.com"], // Remplacez par le domaine de votre frontend déployé
   methods: "GET,POST,PUT,DELETE",
   allowedHeaders: "Content-Type,Authorization",
 };
