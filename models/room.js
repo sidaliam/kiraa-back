@@ -40,8 +40,8 @@ const RoomSchema = new mongoose.Schema(
       { number: Number, unavailableDates: { type: [Date] }, Heure: Number },
     ],
     idHote: {
-      type: mongoose.Schema.Types.ObjectId, // Le type doit être ObjectId car c'est une référence à un document dans une autre collection
-      ref: "Hote", // La référence à la collection Hote
+      type: mongoose.Schema.Types.ObjectId, 
+      ref: "Hote", 
     },
     hotelDetails: {
       name: String,
