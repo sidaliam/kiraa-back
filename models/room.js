@@ -6,13 +6,13 @@ const RoomSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    marque:{
-      type:String,
-      required:true,
+    marque: {
+      type: String,
+      required: true,
     },
-    modéle:{
-      type:String,
-      required:true,
+    modéle: {
+      type: String,
+      required: true,
     },
     photos: {
       type: [String],
@@ -36,24 +36,22 @@ const RoomSchema = new mongoose.Schema(
     description: {
       type: String,
     },
-    roomNumbers: [{ number: Number, unavailableDates: {type: [Date]}}],
+    roomNumbers: [
+      { number: Number, unavailableDates: { type: [Date] }, Heure: Number },
+    ],
     idHote: {
       type: mongoose.Schema.Types.ObjectId, // Le type doit être ObjectId car c'est une référence à un document dans une autre collection
-      ref: "Hote" // La référence à la collection Hote
-      
+      ref: "Hote", // La référence à la collection Hote
     },
     hotelDetails: {
       name: String,
       city: String,
       address: String,
-      cheapestPrice:Number,
+      cheapestPrice: Number,
       desc: String,
       distance: String,
-      title: String
-      
-     
-    }
-    
+      title: String,
+    },
   },
   { timestamps: true }
 );
